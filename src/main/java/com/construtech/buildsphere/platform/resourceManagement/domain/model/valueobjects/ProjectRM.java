@@ -1,8 +1,7 @@
 package com.construtech.buildsphere.platform.resourceManagement.domain.model.valueobjects;
 
-public enum MaterialStatus {
-    NEW,
-    HALF_USED,
-    USED,
-    EMPTY
+import jakarta.persistence.Embeddable;
+
+@Embeddable
+public record ProjectRM(Long projectId) {
 }
